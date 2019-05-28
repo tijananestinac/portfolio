@@ -1,0 +1,105 @@
+@media screen and (max-width: 980px){
+	#slajder {
+		background-position: top center;
+	}
+	.jezik p::first-line {
+	font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 740px){
+	nav ul li {
+		margin-left: 10px;
+	}
+	
+	/*Slajder*/
+	#txt h1 {
+	font-size: 40px;
+	}
+	
+	#txt p {
+	font-size: 35px;
+	}
+	
+	/*Vestine*/
+	.jezik {
+		width: 45%;
+	} 
+	
+	/*Licni*/
+	#licno {
+		flex-direction: column;
+	}
+	#lp h3 {
+		padding-top: 20px;
+	}
+	#slika {
+		width: 40%;
+		margin-left: 30%;
+	}
+	#podaci {
+		width: 65%;
+		padding-top: 10px;
+		margin-left: 17%;
+	}
+	
+	/*Futer*/
+	.ft {
+		font-size: 25px;
+	}
+	#copyR p {
+	font-size: 15px;
+	}
+	
+}
+@media screen and (max-width: 480px){
+	nav ul li {
+		display: flex;
+		flex-direction: column;
+		margin-left: 0px;
+	}
+	
+	/*Slajder*/
+	#txt{
+		width: 250px;
+		left: 20%;
+		border-radius: 20px;
+	}
+	
+	#txt h1 {
+	font-size: 35px;
+	}
+	#txt p {
+	font-size: 30px;
+	}
+	
+	/*Vestine*/ 
+	.jezik {
+		width: 100%;
+	}
+	.jezik p::first-line {
+		font-size: 20px;
+	}
+	
+	/*Projekti*/
+	#slika1 {
+		width: 70%;
+		margin-left:15%;
+	}
+	#tekst {
+		width:70%;
+		margin-left:15%;
+	}
+	
+
+	/*Futer*/
+	#futer {
+		flex-direction: column;
+	}
+	#linkovi {
+		width: 100%;
+	}
+	#copyR {
+		width: 100%;
+	}
+}

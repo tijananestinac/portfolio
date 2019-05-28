@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300i|Roboto&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+$bojaTxt:rgb(212, 147, 12);
+
+.cleaner {
+  clear: both;
+}
+
+body {
+  font-family: 'Roboto' , sans-serif;
+  background-color: rgb(47, 47, 49);
+}
+
+/**HEADER**/
+
+header {
+  width: 100%;
+}
+
+#meni {
+  background-color: rgb(43, 64, 104);
+  position: fixed;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+  ul {
+    list-style-type: none;
+    li {
+      display: inline-block;
+      text-align: center;
+      margin-left: 30px;
+      a {
+        text-decoration: none;
+        text-align: center;
+        font-size: 25px;
+        color: $bojaTxt;
+      }
+    }
+  }
+}
+
+/**SLAJDER**/
+
+.okvir {
+  width: 100%;
+  min-height: 600px;
+}
+
+#slajder {
+  width: 100%;
+  min-height: 800px;
+  background-image: url(../img/tastatura.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#txt {
+  width: 350px;
+  position: absolute;
+  background-color: rgb(43, 64, 104);
+  border-radius: 0px 20px 20px 0px;
+  top: 40%;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  box-shadow: 3px 3px 4px #2B4068;
+  padding: 10px;
+  h1 {
+    font-size: 45px; 
+	color: $bojaTxt;
+  }
+  p {
+    font-size: 40px;
+	color: $bojaTxt;
+  }
+}
+
+/**Vestine**/
+
+#vestine {
+  padding-top: 20px;
+  h2 {
+    font-size: 50px;
+    text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bold;
+	color: $bojaTxt;
+  }
+}
+
+#jz {
+  width: 100%;
+  min-height: 500px;
+}
+
+.blokovi {
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  justify-content: space-around;
+  text-align: justify;
+  padding: 15px;
+  padding-top: 25px;
+  flex-wrap: wrap;
+}
+
+.jezik {
+  width: 30%;
+  padding: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  background-color: rgb(43, 64, 104);
+  font-size: 15px;
+  p {
+	 color: $bojaTxt;
+  }
+  
+}
+
+.fab, .far {
+  font-size: 50px;
+  color: rgb(212, 147, 12);
+}
+
+.jezik p::first-line {
+  font-size: 25px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+/**PROJEKTI**/
+
+.okvir h3 {
+  font-size: 50px;
+  text-align: center;
+  padding: 5px;
+  padding-top: 30px;
+  color: $bojaTxt;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+#lepak {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#slika1 {
+  width: 45%;
+  margin-top: 40px;
+  margin-left: 28%;
+  img {
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+
+#tekst {
+  width: 45%;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 15px;
+  margin-left: 28%;
+  h3 {
+    font-size: 30px;
+	color: $bojaTxt;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(212, 147, 12);
+    &:hover {
+      color: white;
+    }
+	p {
+		color: $bojaTxt;
+	}
+  }
+}
+
+/**LICNI PODACI**/
+
+#lp h3 {
+  font-size: 55px;
+  text-align: center;
+  padding-top: 50px;
+  color: $bojaTxt;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+#licno {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+#slika {
+  width: 23%;
+  margin-left: 50px;
+  img {
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+    border-radius: 10px;
+  }
+}
+
+#podaci {
+  width: 35%;
+  float: right;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 40px;
+  h4 {
+    font-size: 35px;
+	color: $bojaTxt;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bold;
+  }
+  p {
+	color: $bojaTxt;;
+  }
+}
+
+/**FOOTER**/
+
+footer {
+  width: 100%;
+  padding-top: 10px;
+}
+
+#futer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(43, 64, 104);
+}
+
+#linkovi {
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+}
+
+#copyR {
+  width: 50%;
+  padding: 5px;
+  p {
+    font-size: 18px;
+    text-align: center;
+	color: $bojaTxt;
+  }
+}
+
+.ft {
+  color: $bojaTxt;
+  font-size: 35px;
+  padding: 2px;
+}
